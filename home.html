@@ -10,6 +10,9 @@
     <link rel="icon" type="image/x-icon" href="https://www.rockstargames.com/favicon.ico" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
@@ -19,29 +22,37 @@
 <body style="background: linear-gradient(to bottom, #000000 5%, #ffffff 100%) ">
     <!--Parte de cima-->
     <header>
-        <!--Criando o menu superior fixo, com classe de expanção-->
-        <nav class="navbar navbar-expand-lg text-uppercase fixed-top" style="background-image: url(https://media-exp1.licdn.com/dms/image/C4D1BAQGf5924_ucP5A/company-background_10000/0?e=2159024400&v=beta&t=QS8Qvdd0G4P8xLdEWkWntXH5V-xk5hZ2FhutXIgx44Y);">
-            <!--Container para conseguir denifir o alinhamento por coluna-->
-            <div class="container">
-                <!--icone de menu-->
-                <div class="col-xl-5 align-self-center text-left">
-                    <i class="fa fa-bars" style="color: #FFAB00; height: 40px; width: auto;" aria-hidden="true"></i>
-                </div>
-                <!--Logo-->
-                <div class="col-xl-2 align-self-center text-center">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Rockstar_Games_Logo.svg/835px-Rockstar_Games_Logo.svg.png" style="width: 60px;">
-                </div>
-                <!--Opções menu-->
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#sobre">Sobre</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#projetos">Projetos</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contato">Contatos</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <!--Criando o menu superior fixo, com classe de expanção-->
+    <nav class="navbar text-uppercase fixed-top"
+      style="background-image: url(https://media-exp1.licdn.com/dms/image/C4D1BAQGf5924_ucP5A/company-background_10000/0?e=2159024400&v=beta&t=QS8Qvdd0G4P8xLdEWkWntXH5V-xk5hZ2FhutXIgx44Y);">
+      <!--Container para conseguir denifir o alinhamento por coluna-->
+      <div class="container">
+        <!--icone de menu-->
+        <div class="col-5 align-self-center text-left">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars" style="color: #FFAB00; height: 40px; width: auto;" aria-hidden="true"></i>
+          </button>
+        </div>
+        <!--Logo-->
+        <div class="col-5 align-self-center text-right">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Rockstar_Games_Logo.svg/835px-Rockstar_Games_Logo.svg.png"
+            style="width: 60px;">
+        </div>
+        <!--Opções menu-->
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                href="#sobre">Sobre</a></li>
+            <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                href="#projetos">Projetos</a></li>
+            <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                href="#contato">Contatos</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
     <section class="page-section" id="sobre">
         <div class="container">
